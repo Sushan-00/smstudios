@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Graphic Design services at SM Studios.">
+    <title>Graphic Design | SM Studios</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Outfit for modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Syne:wght@400..800&display=swap"
+        rel="stylesheet">
+
+    <!-- GSAP and Lenis CDN for animations and smooth scrolling -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+    <!-- SplitType for text animations -->
+    <script src="https://unpkg.com/split-type"></script>
+</head>
+
+<body>
+    <div class="sample-modal" id="sampleModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <div class="modal-close">&times;</div>
+            <div class="modal-slider">
+                <div class="modal-slides">
+                    <div class="modal-slide active"><img src="G1.jpg" alt="Gaming Sample 1"></div>
+                    <div class="modal-slide"><img src="G2.jpg" alt="Gaming Sample 2"></div>
+                    <div class="modal-slide"><img src="G3.png" alt="Gaming Sample 3"></div>
+                    <div class="modal-slide"><img src="G4.jpg" alt="Gaming Sample 4"></div>
+                </div>
+                <div class="modal-nav">
+                    <div class="modal-prev">&larr;</div>
+                    <div class="modal-next">&rarr;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loader">
+
+
+
+        <div class="loader-content">
+            <div class="loader-logo">Graphic Design</div>
+            <div class="loader-bar-container">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="SM Studios Logo" class="brand-icon">
+            <span>SM Studios</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html#home" class="nav-link" data-text="Home">Home</a>
+            <a href="index.html#about" class="nav-link" data-text="About">About</a>
+            <a href="index.html#services" class="nav-link" data-text="Services">Services</a>
+            <a href="index.html#work" class="nav-link" data-text="Work">Work</a>
+            <a href="index.html#contact" class="nav-link" data-text="Contact">Contact</a>
+        </div>
+        <div class="mobile-menu-toggle" id="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-overlay">
+        <div class="mobile-nav-content">
+            <div class="mobile-nav-header">
+                <div class="mobile-nav-logo">SM Studios</div>
+                <div class="mobile-nav-close" id="menu-close-btn">&times;</div>
+            </div>
+            <a href="index.html#home" class="mobile-nav-link">Home</a>
+            <a href="index.html#about" class="mobile-nav-link">About</a>
+            <a href="index.html#services" class="mobile-nav-link">Services</a>
+            <a href="index.html#work" class="mobile-nav-link">Work</a>
+            <a href="index.html#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="page-hero section">
+            <video class="hero-video" autoplay muted loop playsinline oncontextmenu="return false;" controlsList="nodownload">
+                <source src="GB.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="left-container">
+                <div class="hero-content">
+
+                    <p class="greeting reveal-text">Our Expertise</p>
+                    <h1 class="name reveal-text">Graphic<br>Design</h1>
+                    <p class="bio reveal-text">Designing modern, visually striking branding materials, posters, and user
+                        interfaces that leave a lasting impact.</p>
+                    <a href="#contact" class="lets-talk-btn reveal-item">
+                        Let's Talk <span>&rarr;</span>
+                    </a>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+
+
+        <section class="details section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="slide-up">Services Offered</h2>
+                    <div class="line slide-up"></div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card slide-up">
+                        <h3>Gaming</h3>
+                        <p>SM Studios Powering Your Gaming Identity</p>
+                        <button class="modern-sample-btn">
+                            View Samples
+                            <span class="btn-arrow">&rarr;</span>
+                        </button>
+                    </div>
+
+
+
+
+                    <div class="service-card slide-up">
+                        <h3>Professional Designs</h3>
+                        <p>SM Studios Professional Designs That Stand Out</p>
+                        <button class="modern-btn-static">
+                            View Samples
+                            <span class="btn-arrow">&rarr;</span>
+                        </button>
+                    </div>
+
+
+
+
+
+
+                    <div class="service-card slide-up">
+                        <h3>Logo Designs</h3>
+                        <p>SM Studios Logos That Define Your Brand</p>
+                        <button class="modern-btn-static">
+                            View Samples
+                            <span class="btn-arrow">&rarr;</span>
+                        </button>
+                    </div>
+
+
+                </div>
+                <div style="text-align: center; margin-top: 50px;">
+                    <a href="#contact" class="lets-talk-btn">
+                        Let's Talk <span>&rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="contact section" id="contact">
+        <div class="container">
+            <div class="contact-content slide-up">
+                <h2>Let's create<br>something amazing.</h2>
+                <p>Available for freelance opportunities. Drop me a line!</p>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sushanmendaka00@gmail.com" class="email-link" target="_blank">sushanmendaka00@gmail.com</a>
+
+                <div class="social-links">
+                    <a href="https://www.instagram.com/sushan_mw" target="_blank">Instagram</a>
+                    <a href="https://www.linkedin.com/in/sushan-mendaka" target="_blank">LinkedIn</a>
+                    <a href="#">Behance</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="copyright-text">&copy; 2026 <span>SM Studios</span> by Sushan Mendaka. All rights
+                        reserved.</p>
+                    <p class="scroll-top" onclick="window.scrollTo({top:0, behavior:'smooth'})">Back to Top &uarr;</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Floating WhatsApp Button -->
+    <!-- Floating Navigation & Contact -->
+    <div class="back-to-top-float">TOP</div>
+    <a href="https://wa.me/94752897881" class="whatsapp-float" target="_blank">
+        <div class="wa-message">Need help with your project?</div>
+        <div class="wa-icon-wrapper">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.284l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.768-5.764-5.768zm3.393 8.243c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793 0-.852.448-1.271.607-1.445.159-.175.347-.218.463-.218.116 0 .231.001.332.005.109.004.258-.041.405.314.159.386.543 1.32.593 1.42.05.101.084.218.015.347-.069.13-.103.212-.206.331-.103.119-.213.264-.304.354-.101.101-.206.212-.089.414.116.202.518.854 1.114 1.385.769.684 1.415.895 1.617.996.202.101.319.084.437-.05.118-.135.508-.59.643-.79.135-.202.27-.168.456-.098.186.069 1.173.553 1.374.654.202.101.337.151.386.236.049.084.049.487-.095.892zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22c-5.523 0-10-4.477-10-10S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z">
+                </path>
+            </svg>
+        </div>
+        <span class="wa-text">Emergency Contact</span>
+    </a>
+</body>
+
+</html>
